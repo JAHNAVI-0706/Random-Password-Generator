@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.password-display {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#password {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#copy {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+#copy:hover {
+    background-color: #0056b3;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.option label {
+    font-size: 1rem;
+}
+
+.option input[type="number"],
+.option input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+#generate {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#generate:hover {
+    background-color: #218838;
+}
+
+#generate:active {
+    transform: scale(0.98);
+}
+
+.strength-meter {
+    height: 10px;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    background-color: #f00;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
